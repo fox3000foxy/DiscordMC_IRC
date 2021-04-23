@@ -26,4 +26,4 @@ For example: <br>
 ]
 ```
 <br>
-set my avatar to ![My avatar](https://raw.githubusercontent.com/fox3000foxy/avatarException/main/Fox3000.png)
+set my avatar to ![My avatar](https://github.com/fox3000foxy/avatarException/blob/main/Fox3000.png)
