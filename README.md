@@ -15,7 +15,8 @@ MINEFLAYERCONFIG_VERSION=version_of_mcserver (the version of server like '1.16.5
 <br>
 Then copy data/avatarException_example.json to data/avatarException.json<br>
 This file allow you to set custom avatar for players which avatar will not showed on discord<br>
-For example:<br>
+
+For example: <br>
 ```json
 [
     {
