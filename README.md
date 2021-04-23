@@ -26,4 +26,9 @@ For example: <br>
 ]
 ```
 <br>
-set my avatar to ![My avatar](https://github.com/fox3000foxy/avatarException/blob/main/Fox3000.png)
+
+set my avatar to<br>![My avatar](https://github.com/fox3000foxy/avatarException/blob/main/Fox3000.png)
+![image](https://user-images.githubusercontent.com/40730498/115846340-18fcdc00-a422-11eb-8638-d321327a7d0a.png)
+![image](https://user-images.githubusercontent.com/40730498/115846425-2ca84280-a422-11eb-964d-ed41bbefa4d7.png)
+
+Your Discord bot should be an administrator, and your MC bot should have access to /tellraw command
