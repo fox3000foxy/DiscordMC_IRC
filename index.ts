@@ -3,7 +3,6 @@ import { config } from 'dotenv';
 const client = new Client();
 import { createBot } from 'mineflayer';
 import { readFileSync } from 'fs';
-//const config = JSON.parse(readFileSync("./data/config.json", 'utf8'));
 config();
 const TOKEN: string = process.env.TOKEN;
 const CHANNEL_ID: string = process.env.CHANNEL_ID;
@@ -21,30 +20,14 @@ const bot = createBot({
 });
 
 bot.on('login', () => {
-  //For LapCorp Server : play.lapcorp.eu
+  //For cracked server
   /* → */bot.chat("/register IRCBot IRCBot");
   /* → */bot.chat("/login IRCBot");
   bot.chat("Hello there ! I'm the Discord IRC Bot !");
   console.log("IRC Bot spawned")
 })
 
-//For LapCorp Server : play.lapcorp.eu
-/* ↓ */
-bot.on('message', (message) => {
-  if (message.json) {
-    if (message.json['extra'] && message.json['extra'].length == 4) {
-      let username = message.json['extra'][1].text.split(" ")[0];
-      let grade = message.json['extra'][0].text;
-      if (username === bot.username) {
-        return;
-      }
-      sendToDiscord(username, `${grade} `, message.json['extra'][3].text);
-    }
-  }
-})
-/* ↑ */
-
-//Another vanilla server
+//Foe vanilla server
 bot.on('chat', (username: string, message: string) => {
   if (username === bot.username) {
     return;
